@@ -1,0 +1,51 @@
+body{
+margin:0;
+padding:0;
+}
+.smily{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:200px;
+height:200px;
+background-color:yellow;
+border-radius:50%;
+border:5px solid black;
+}
+.eyes:before,.eyes:after{
+content:"";
+position:absolute;
+top:30%;
+width:25px;
+height:25px;
+background:black;
+border-radius:50%;
+transition:0.5s;
+}
+.eyes:before{
+left:25%;
+}
+.eyes:after{
+right:25%;
+}
+.lips{
+position:absolute;
+height:100px;
+width:100px;
+border-bottom:10px solid black;
+margin-top:30px;
+border-radius:0;
+transition:0.5s;
+top:10%;
+left:50%;
+transform:translateX(-50%);
+}
+.smily:hover .lips{
+width:130px;
+border-radius:50%;
+}
+.smily:hover .eyes:before,.smily:hover .eyes:after{
+width:px;
+height:45px;
+}
